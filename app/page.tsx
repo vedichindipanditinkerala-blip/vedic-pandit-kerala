@@ -121,36 +121,44 @@ export default function Home() {
   return (
     <div className="min-h-screen text-gray-900 font-sans relative bg-amber-50">
       <Head>
-        <title>Vedic Hindi Pandit in Thiruvananthapuram & Kochi | Pandit Vikash Pandey</title>
+        <title>Best North Indian Pandit in Thiruvananthapuram & Kochi | Acharya Vikash Pandey</title>
         <meta name="description" content="Book expert North Indian Hindi Pandit in Thiruvananthapuram and Kochi for Griha Pravesh, Satyanarayan Katha, Vivah, and all authentic Hindu rituals." />
         <meta name="keywords" content="North Indian Pandit in Kerala, Hindi Pandit in Thiruvananthapuram, Hindi Pandit in Kochi, Griha Pravesh Puja Kerala, Satyanarayan Katha Kochi, Marriage Pandit Trivandrum, Rudrabhishek Kerala, Vastu Shanti Pandit, Bhoomi Pujan Pandit Kerala, North Indian Priest Thiruvananthapuram, Hindu Rituals Kerala, Puja Booking Kochi, Navchandi Hawan Trivandrum, Online Pandit Booking Kerala, Acharya Vikash Pandey, Vedic Pandit Trivandrum, Wedding Pandit Kochi, Satyanarayan Puja Trivandrum, Baby Shower Puja Kerala, Best Pandit in Kerala, North Indian Priest in Kochi, Hindi Speaking Pandit Trivandrum, Vedic Rituals Expert Kerala, Homam and Hawan Services Kerala, Griha Pravesh Shanti Pandit Kochi" />
+        <link rel="canonical" href="https://www.vedichindipanditinkerala.com" />
       </Head>
 
       {/* Ganesh Ji Background Watermark */}
       <div 
+        aria-hidden="true"
         className="fixed inset-0 pointer-events-none z-0 opacity-10 bg-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url('/images/ganesh.png')` }}
       ></div>
 
-      {/* Floating Action Icons (Phone & WhatsApp) */}
-      <div className="fixed bottom-6 left-6 z-50 flex flex-col gap-3">
+      {/* Fixed Call Button (Left Side) */}
+      <div className="fixed bottom-6 left-6 z-50">
         <a 
           href="tel:9589529572" 
-          className="bg-amber-600 hover:bg-amber-700 text-white p-3.5 rounded-full shadow-2xl flex items-center justify-center transition transform hover:scale-110 border-2 border-white"
+          aria-label="Call Pandit Ji at 9589529572"
+          className="bg-amber-600 hover:bg-amber-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition transform hover:scale-110 border-2 border-white"
           title="Call Pandit Ji"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
         </a>
+      </div>
+
+      {/* Fixed WhatsApp Button (Right Side) */}
+      <div className="fixed bottom-6 right-6 z-50">
         <a 
           href="https://wa.me/919589529572?text=Namaste%20Pandit%20Ji,%20I%20want%20to%20book%20a%20pooja." 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="bg-green-600 hover:bg-green-700 text-white p-3.5 rounded-full shadow-2xl flex items-center justify-center transition transform hover:scale-110 border-2 border-white"
+          aria-label="Chat on WhatsApp with Pandit Ji"
+          className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition transform hover:scale-110 border-2 border-white"
           title="Chat on WhatsApp"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
         </a>
@@ -169,7 +177,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Main Navbar with Custom Logo Component */}
+        {/* Main Navbar */}
         <nav className="bg-[#5c1313] text-white shadow-md sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <Logo />
@@ -191,7 +199,7 @@ export default function Home() {
           </div>
         </nav>
 
-        {/* Hero Section with Smooth Fade Slider */}
+        {/* Hero Section */}
         <section className="bg-gradient-to-b from-[#4a0e0e] to-[#2c0808] text-white py-16 px-4 shadow-2xl">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
@@ -222,7 +230,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Smooth Fade Slider Box */}
+            {/* Slider Box */}
             <div className="relative bg-black/40 p-3 rounded-2xl border-2 border-amber-600/50 shadow-2xl overflow-hidden group">
               <div className="h-72 md:h-80 w-full relative rounded-xl overflow-hidden">
                 {sliderImages.map((slide, index) => (
@@ -245,12 +253,14 @@ export default function Home() {
               </div>
               <button 
                 onClick={() => setCurrentSlide((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1))}
+                aria-label="Previous Slide"
                 className="absolute left-5 top-1/2 -translate-y-1/2 z-20 bg-black/60 text-white p-2 rounded-full hover:bg-amber-600 transition"
               >
                 &#10094;
               </button>
               <button 
                 onClick={() => setCurrentSlide((prev) => (prev + 1) % sliderImages.length)}
+                aria-label="Next Slide"
                 className="absolute right-5 top-1/2 -translate-y-1/2 z-20 bg-black/60 text-white p-2 rounded-full hover:bg-amber-600 transition"
               >
                 &#10095;
@@ -260,6 +270,7 @@ export default function Home() {
                   <button 
                     key={i} 
                     onClick={() => setCurrentSlide(i)}
+                    aria-label={`Go to slide ${i + 1}`}
                     className={`w-2.5 h-2.5 rounded-full ${currentSlide === i ? 'bg-amber-500' : 'bg-white/50'}`}
                   ></button>
                 ))}
@@ -268,7 +279,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Linked Service Localities Section (Hyperlocal SEO Links) */}
+        {/* Hyperlocal SEO Links Section */}
         <section className="py-8 bg-amber-900 text-amber-100 px-4 shadow-inner">
           <div className="max-w-6xl mx-auto text-center">
             <h3 className="text-sm font-bold uppercase tracking-wider mb-1 text-amber-300">
@@ -291,7 +302,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Pooja Directory Grid with Book & WhatsApp Buttons */}
+        {/* Pooja Directory Grid */}
         <section id="services" className="py-16 px-4 max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-amber-800 font-bold text-xs uppercase tracking-wider bg-amber-200/60 px-3 py-1 rounded-full">Sacred Rituals</span>
@@ -327,7 +338,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* See More / See Less Toggle Button */}
           <div className="text-center mt-10">
             <button 
               onClick={() => setShowAllServices(!showAllServices)}
@@ -403,7 +413,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Booking Form Section with Live Image Preview */}
+        {/* Booking Form Section */}
         <section id="booking-form" className="py-16 px-4 bg-[#4a0e0e] text-white shadow-2xl">
           <div className="max-w-xl mx-auto bg-white text-gray-900 p-8 md:p-10 rounded-3xl shadow-2xl border border-amber-700">
             <h3 className="text-2xl font-extrabold text-center text-amber-950 mb-2">Online Puja Booking Form</h3>
@@ -418,16 +428,17 @@ export default function Home() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-xs font-bold uppercase text-gray-700 mb-1">Your Full Name</label>
-                  <input type="text" name="name" required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" placeholder="e.g. Rahul Sharma" />
+                  <label htmlFor="name-input" className="block text-xs font-bold uppercase text-gray-700 mb-1">Your Full Name</label>
+                  <input id="name-input" type="text" name="name" required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" placeholder="e.g. Rahul Sharma" />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase text-gray-700 mb-1">Mobile Number</label>
-                  <input type="tel" name="phone" required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" placeholder="e.g. 9589529572" />
+                  <label htmlFor="phone-input" className="block text-xs font-bold uppercase text-gray-700 mb-1">Mobile Number</label>
+                  <input id="phone-input" type="tel" name="phone" required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" placeholder="e.g. 9589529572" />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase text-gray-700 mb-1">Select Puja</label>
+                  <label htmlFor="pooja-select" className="block text-xs font-bold uppercase text-gray-700 mb-1">Select Puja</label>
                   <select 
+                    id="pooja-select"
                     name="pooja" 
                     value={selectedPooja}
                     onChange={(e) => setSelectedPooja(e.target.value)}
@@ -439,7 +450,6 @@ export default function Home() {
                   </select>
                 </div>
 
-                {/* Selected Puja Image Preview */}
                 {currentPujaObj && (
                   <div className="flex items-center gap-4 bg-amber-50 p-3 rounded-2xl border border-amber-200">
                     <img src={currentPujaObj.img} alt={currentPujaObj.name} className="w-16 h-16 object-cover rounded-xl border border-amber-400" />
@@ -451,12 +461,12 @@ export default function Home() {
                 )}
 
                 <div>
-                  <label className="block text-xs font-bold uppercase text-gray-700 mb-1">Puja Date</label>
-                  <input type="date" name="date" required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" />
+                  <label htmlFor="date-input" className="block text-xs font-bold uppercase text-gray-700 mb-1">Puja Date</label>
+                  <input id="date-input" type="date" name="date" required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase text-gray-700 mb-1">Location / Locality in Thiruvananthapuram or Kochi</label>
-                  <textarea name="address" rows={2} required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" placeholder="e.g. Kowdiar, Trivandrum / Edappally, Kochi"></textarea>
+                  <label htmlFor="address-input" className="block text-xs font-bold uppercase text-gray-700 mb-1">Location / Locality in Thiruvananthapuram or Kochi</label>
+                  <textarea id="address-input" name="address" rows={2} required className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-amber-600 focus:outline-none bg-gray-50 text-sm" placeholder="e.g. Kowdiar, Trivandrum / Edappally, Kochi"></textarea>
                 </div>
                 <button type="submit" disabled={loading} className="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3.5 rounded-xl shadow-lg transition text-sm">
                   {loading ? 'Submitting...' : 'Confirm Booking Inquiry'}
